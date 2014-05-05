@@ -8,6 +8,11 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt-ruby', '3.1.2'
 
+
+# for the minitest warning http://stackoverflow.com/questions/16866520/rails-4-rspec-warning-you-should-require-minitest-autorun-instead
+gem 'minitest'
+
+
 gem 'pg', '0.15.1'
 
 group :development, :test do
@@ -17,7 +22,7 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
-  gem 'factory_girl_rails', '4.2.0'
+  gem 'factory_girl_rails', '4.2.1'
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
