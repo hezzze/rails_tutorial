@@ -1,0 +1,6 @@
+require 'shellwords'
+
+class ApiController < ApplicationController
+  def cross_get
+    url = params[:url]
+    `wget 
