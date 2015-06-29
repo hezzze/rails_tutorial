@@ -14,6 +14,7 @@ gem 'bootstrap-will_paginate', '0.0.9'
 # for the minitest warning http://stackoverflow.com/questions/16866520/rails-4-rspec-warning-you-should-require-minitest-autorun-instead
 gem 'minitest'
 
+gem 'haml'
 
 gem 'pg', '0.15.1'
 

@@ -4,6 +4,16 @@ describe "Authentication" do
 
   subject { page }
 
+  describe "home page" do
+    before { visit root_path }
+    
+    it { should_not have_link('Profile') }
+    it { should_not have_link('Settings') }
+    it { should_not have_link('Sign out', href: signout_path) }
+    it { should have_link('Sign in', href: signin_path) }
+  end
+    
+
   describe "signin page" do
     before { visit signin_path }
     
